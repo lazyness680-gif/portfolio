@@ -3,8 +3,8 @@
 Одностраничный сайт на чистом HTML / CSS / JS для малого бизнеса:
 лендинги, сайты-визитки и автоматизация заявок. Без сборщиков, фреймворков и админки.
 
-- **Превью:** откройте `index.html` в браузере.
-- **Домен-заглушка в коде:** `olga-kosykh.ru` — замените на свой после покупки.
+- **Живая версия:** https://lazyness680-gif.github.io/portfolio/ (GitHub Pages).
+- **Домен-заглушка в коде:** сейчас указан адрес GitHub Pages. После покупки домена замените его (см. раздел «Что заменить перед публикацией»).
 
 ---
 
@@ -77,10 +77,10 @@ php -S localhost:8000
 
 ### 3. Домен
 
-Замените `olga-kosykh.ru` в:
+Замените `https://lazyness680-gif.github.io/portfolio/` на свой домен в:
 
 - `index.html` — `canonical`, Open Graph, Twitter Card, JSON-LD;
-- `privacy.html` — `canonical`;
+- `privacy.html` — `canonical` и текст политики;
 - `sitemap.xml`;
 - `robots.txt`;
 - `api/config.example.php` — `email_from`.
@@ -144,6 +144,25 @@ return [
 > `api/config.php` добавлен в `.gitignore` и не должен попадать в публичный репозиторий.
 
 Если Telegram недоступен, заявка уйдёт на e-mail. Если и почта не настроена — пользователь увидит ссылку на Telegram.
+
+---
+
+## Публикация на GitHub Pages
+
+Сайт уже опубликован: **https://lazyness680-gif.github.io/portfolio/**
+
+Репозиторий: **https://github.com/lazyness680-gif/portfolio**
+
+Обновление после правок:
+
+```bash
+git add -A
+git commit -m "Что изменилось"
+git push
+```
+
+GitHub Pages пересоберёт сайт автоматически за 1–2 минуты (ветка `main`, папка `/`).
+На Pages не работают PHP-форма и `.htaccess` — для боевой версии с заявками в Telegram нужен хостинг с PHP (см. ниже).
 
 ---
 
