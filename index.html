@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сайты и автоматизация для малого бизнеса — Ольга Косых</title>
+  <meta name="description" content="Лендинг за 3 дня и автоматизация заявок для малого бизнеса. Сайт под ключ, заявки в Telegram, без посредников и скрытых доплат. Ольга Косых.">
+  <link rel="canonical" href="https://olga-kosykh.ru/">
+  <meta name="theme-color" content="#F7F1E8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141816" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Ольга Косых">
+  <meta property="og:title" content="Сайты и автоматизация для малого бизнеса — Ольга Косых">
+  <meta property="og:description" content="Лендинг за 3 дня, заявки в Telegram и автоматизация рутины. Один исполнитель, понятные сроки и цена.">
+  <meta property="og:url" content="https://olga-kosykh.ru/">
+  <meta property="og:image" content="https://olga-kosykh.ru/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Сайты и автоматизация для малого бизнеса — Ольга Косых">
+  <meta name="twitter:description" content="Лендинг за 3 дня, заявки в Telegram и автоматизация рутины.">
+  <meta name="twitter:image" content="https://olga-kosykh.ru/assets/img/og-image.jpg">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script>
+    // Тема применяется до отрисовки, чтобы не было мигания
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Ольга Косых — сайты и автоматизация для малого бизнеса",
+    "description": "Лендинги за 3 дня и автоматизация заявок для малого бизнеса. Сайт под ключ, заявки в Telegram, интеграции с таблицами.",
+    "url": "https://olga-kosykh.ru/",
+    "image": "https://olga-kosykh.ru/assets/img/og-image.jpg",
+    "areaServed": "Россия",
+    "founder": { "@type": "Person", "name": "Ольга Косых" },
+    "sameAs": ["https://github.com/lazyness680-gif", "https://t.me/Aleka_Olga"],
+    "priceRange": "от 5 000 ₽",
+    "makesOffer": [
+      { "@type": "Offer", "name": "Лендинг", "price": "5000", "priceCurrency": "RUB" },
+      { "@type": "Offer", "name": "Сайт + заявки под ключ" },
+      { "@type": "Offer", "name": "Автоматизация рутины" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Сколько стоит сайт?", "acceptedAnswer": { "@type": "Answer", "text": "Лендинг — от 5 000 ₽. Стоимость сайта с автоматизацией и отдельных задач обсуждаем после брифа." } },
+      { "@type": "Question", "name": "Сколько времени занимает работа?", "acceptedAnswer": { "@type": "Answer", "text": "Лендинг — 3 дня. Автоматизация — от 1–2 недель в зависимости от задачи." } },
+      { "@type": "Question", "name": "Как проходит оплата?", "acceptedAnswer": { "@type": "Answer", "text": "Предоплата 50%, остаток — после сдачи." } },
+      { "@type": "Question", "name": "Вы работаете официально?", "acceptedAnswer": { "@type": "Answer", "text": "Да, оформляюсь как самозанятая и выдаю чек." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">ОК</span>
+      <span class="brand-text">
+        <strong>Ольга Косых</strong>
+        <small>сайты и автоматизация</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#process">Как работаю</a>
+      <a href="#pricing">Цены</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="https://t.me/Aleka_Olga" target="_blank" rel="noopener">Написать</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Переключить тему" title="Переключить тему">
+        <svg class="icon icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg class="icon icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>
+        </svg>
+      </button>
+      <button class="burger" type="button" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="badge"><span class="pulse" aria-hidden="true"></span> Один фрилансер · малый бизнес</p>
+        <h1>Сайт и автоматизация для малого бизнеса — <em>под ключ за 3 дня</em></h1>
+        <p class="lead">Лендинг, который приводит заявки, и автоматизация, которая перестаёт их терять. Без посредников, скрытых доплат и «мы вам перезвоним».</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://t.me/Aleka_Olga" target="_blank" rel="noopener" data-goal="tg_click">
+            Обсудить задачу в Telegram
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+          <a class="btn btn-ghost" href="#cases">Смотреть кейсы</a>
+        </div>
+        <ul class="trust-chips" aria-label="Условия работы">
+          <li>Лендинг за 3 дня</li>
+          <li>2 круга правок</li>
+          <li>Предоплата 50%</li>
+          <li>Инструкция и доступы</li>
+        </ul>
+      </div>
+
+      <div class="hero-media reveal" data-delay="120">
+        <div class="photo-frame">
+          <!-- TODO: заменить фото — сейчас стоит заглушка (assets/img/olga.jpg).
+               Положить живой портрет в assets/img/, обновить width/height; см. README, раздел «Что заменить» → «Фото». -->
+          <img src="assets/img/olga.jpg" alt="Ольга Косых" width="800" height="1029" fetchpriority="high">
+        </div>
+        <div class="floating-card">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span><strong>Ольга Косых</strong><small>на связи в Telegram</small></span>
+        </div>
+        <div class="hero-sticker" aria-hidden="true">
+          <strong>3 дня</strong>
+          <span>лендинг под ключ</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAINS -->
+  <section class="section" id="pains">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Знакомо?</p>
+        <h2>Узнаёте себя?</h2>
+        <p class="section-sub">Пять ситуаций, из-за которых малый бизнес теряет клиентов и время. Если хотя бы одна — про вас, ниже есть решение.</p>
+      </div>
+
+      <div class="pain-grid">
+        <article class="pain-card reveal">
+          <span class="pain-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M3 9h18M8 18v3M16 18v3M6 21h12"></path></svg>
+          </span>
+          <h3>Сайта нет или он устарел</h3>
+          <p>Клиенты не понимают, что вы предлагаете. Приходится всё объяснять в переписке и терять тех, кто не дошёл до вопроса.</p>
+        </article>
+
+        <article class="pain-card reveal" data-delay="60">
+          <span class="pain-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v12H7l-3 3V5Z"></path><path d="M8 9h8M8 12h5"></path></svg>
+          </span>
+          <h3>Заявки теряются в переписках</h3>
+          <p>WhatsApp, VK, блокнот, «перезвоню позже». Часть обращений просто растворяется — и вы об этом даже не узнаёте.</p>
+        </article>
+
+        <article class="pain-card reveal" data-delay="120">
+          <span class="pain-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path><path d="M4 4 2 6M20 4l2 2"></path></svg>
+          </span>
+          <h3>Рутина съедает день</h3>
+          <p>Таблицы, напоминания, отчёты. Вечером понимаете, что занимались не бизнесом, а переносом цифр из чата в Excel.</p>
+        </article>
+
+        <article class="pain-card reveal" data-delay="180">
+          <span class="pain-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path><path d="M17 4h.01M20 7h.01"></path></svg>
+          </span>
+          <h3>Клиент пишет ночью</h3>
+          <p>Пока вы спите, он пишет конкуренту, который отвечает сразу. Утром остаётся только увидеть «спасибо, уже неактуально».</p>
+        </article>
+
+        <article class="pain-card reveal" data-delay="240">
+          <span class="pain-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
+          </span>
+          <h3>Реклама есть, а откуда заявки — нет</h3>
+          <p>Деньги уходят, а что работает и сколько стоит одна заявка — непонятно. Улучшать нечего, потому что нечего измерять.</p>
+        </article>
+      </div>
+
+      <p class="pains-note reveal">Если хотя бы один пункт про вас — <a href="#services">ниже я покажу, что с этим делать</a>.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Что я делаю</p>
+        <h2>Три способа закрыть задачу</h2>
+        <p class="section-sub">Можно начать с сайта, можно сразу с автоматизации. Всё делаю сама — от структуры до заявок в Telegram.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-top">
+            <span class="service-num" aria-hidden="true">01</span>
+            <span class="service-tag">Быстрый старт</span>
+          </div>
+          <h3>Лендинг за 3 дня</h3>
+          <p>Одностраничник, который объясняет, что вы предлагаете, и ведёт к заявке. Без шаблонов «на миллион» и пустых обещаний.</p>
+          <ul class="check-list">
+            <li>Структура и черновики текстов</li>
+            <li>Дизайн под ваш бизнес</li>
+            <li>Адаптив под телефон</li>
+            <li>Форма заявки</li>
+            <li>Базовое SEO и Метрика</li>
+          </ul>
+          <div class="service-foot">
+            <span class="price">от 5 000 ₽ · 3 дня</span>
+            <a class="btn btn-small btn-ghost" href="https://t.me/Aleka_Olga" target="_blank" rel="noopener" data-goal="tg_click">Обсудить</a>
+          </div>
+        </article>
+
+        <article class="service-card service-card--featured reveal" data-delay="80">
+          <div class="service-top">
+            <span class="service-num" aria-hidden="true">02</span>
+            <span class="service-tag service-tag--hot">Чаще всего берут</span>
+          </div>
+          <h3>Сайт + заявки под ключ</h3>
+          <p>Всё из «Лендинга» плюс автоматизация: заявка сразу приходит в Telegram и попадает в таблицу. Ничего не теряется.</p>
+          <ul class="check-list">
+            <li>Всё из пакета «Лендинг»</li>
+            <li>Telegram-бот для заявок</li>
+            <li>Таблица заявок</li>
+            <li>Уведомления</li>
+            <li>UTM-метки и источники</li>
+          </ul>
+          <div class="service-foot">
+            <span class="price">по запросу · 3–5 дней</span>
+            <a class="btn btn-small btn-primary" href="https://t.me/Aleka_Olga" target="_blank" rel="noopener" data-goal="tg_click">Обсудить</a>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-delay="160">
+          <div class="service-top">
+            <span class="service-num" aria-hidden="true">03</span>
+            <span class="service-tag">Освобождает время</span>
+          </div>
+          <h3>Автоматизация рутины</h3>
+          <p>Убираю ручную работу: боты, интеграции, отчёты, ИИ-ассистенты. Сначала разбираем, где вы теряете часы, потом автоматизируем.</p>
+          <ul class="check-list">
+            <li>Боты для VK и Telegram</li>
+            <li>Интеграции с Excel и Google Sheets</li>
+            <li>Отчёты и напоминания</li>
+            <li>ИИ-администратор</li>
+            <li>Поддержка после запуска</li>
+          </ul>
+          <div class="service-foot">
+            <span class="price">по запросу · от 1–2 недель</span>
+            <a class="btn btn-small btn-ghost" href="https://t.me/Aleka_Olga" target="_blank" rel="noopener" data-goal="tg_click">Обсудить</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section class="section" id="cases">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Кейсы</p>
+        <h2>Что уже сделано</h2>
+        <p class="section-sub">Без выдуманных цифр и «х10 продаж». Показываю, что было, что сделали и что изменилось.</p>
+      </div>
+
+      <div class="cases-list">
+        <!-- Кейс: лендинг для бренда крафтового шоколада (реальный проект, живой сайт) -->
+        <details class="case reveal" open>
+          <summary class="case-summary">
+            <span class="case-status case-status--real">Реальный проект</span>
+            <h3>Лендинг для бренда крафтового шоколада</h3>
+            <span class="case-meta">HTML/CSS/JS · живой сайт niperom.ru · 2026</span>
+            <span class="acc-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="case-body">
+            <div class="case-visual case-visual--choco" aria-hidden="true">
+              <div class="browser">
+                <div class="browser-bar"><span></span><span></span><span></span><i></i></div>
+                <div class="browser-body">
+                  <div class="choco-sky">
+                    <span class="choco-moon"></span>
+                    <span class="choco-cloud choco-cloud--a"></span>
+                    <span class="choco-cloud choco-cloud--b"></span>
+                    <b class="choco-castle"></b>
+                    <i class="choco-hill"></i>
+                  </div>
+                  <div class="choco-row">
+                    <span class="choco choco--ruby"></span>
+                    <span class="choco choco--caramel"></span>
+                    <span class="choco choco--forest"></span>
+                    <span class="choco choco--midnight"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="case-text">
+              <div class="case-block">
+                <span class="case-label">Было</span>
+                <p>Бренд жил на маркетплейсах. Некуда было отправить оптового покупателя или партнёра: вкусы, философию бренда и условия сотрудничества приходилось пересказывать в переписке.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-label">Сделали</span>
+                <p>Одностраничный сайт-«сказку»: авторские SVG-иллюстрации, облака-занавес на первом экране, коллекция из четырёх вкусов, блок «Сотрудничество» с формой заявок. Чистый HTML/CSS/JS, адаптив от 320 px, SEO и аналитика.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-label">Стало</span>
+                <p>Сайт работает на niperom.ru: покупателям — вкусы и «где купить», оптовым партнёрам — условия и заявка через форму. Тексты и ссылки правятся без программиста.</p>
+              </div>
+              <div class="case-links">
+                <a class="text-link" href="https://www.niperom.ru/" target="_blank" rel="noopener">Посмотреть сайт niperom.ru <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://github.com/lazyness680-gif/niperom-landing" target="_blank" rel="noopener">Код на GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- Кейс: сайт для психолога (реальный проект, клиент обезличен) -->
+        <details class="case reveal">
+          <summary class="case-summary">
+            <span class="case-status case-status--real">Реальный проект</span>
+            <h3>Сайт для психолога</h3>
+            <span class="case-meta">HTML/CSS/JS · одностраничник · 2026</span>
+            <span class="acc-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="case-body">
+            <div class="case-visual case-visual--psy" aria-hidden="true">
+              <div class="browser">
+                <div class="browser-bar"><span></span><span></span><span></span><i></i></div>
+                <div class="browser-body">
+                  <div class="sk-nav"><b></b><span></span><span></span><span></span></div>
+                  <div class="sk-hero">
+                    <div class="sk-lines"><b></b><i></i><i></i><u></u></div>
+                    <div class="sk-photo"></div>
+                  </div>
+                  <div class="sk-cards"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="case-text">
+              <div class="case-block">
+                <span class="case-label">Было</span>
+                <p>Клиенты приходили по сарафану. Некуда было отправить ссылку с услугами и ценами — всё объяснялось вручную в переписке.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-label">Сделали</span>
+                <p>Одностраничный сайт: структура услуг, блок о подходе, форма записи, адаптив под телефон и базовое SEO. Без конструкторов и тяжёлых фреймворков.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-label">Стало</span>
+                <p>Запись идёт через сайт, услуги и цены описаны — меньше времени уходит на первичные вопросы. Клиенту достаточно одной ссылки.</p>
+              </div>
+              <a class="text-link" href="https://github.com/lazyness680-gif/psyhonline-site" target="_blank" rel="noopener">Посмотреть код на GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </details>
+
+        <details class="case reveal">
+          <summary class="case-summary">
+            <span class="case-status case-status--wip">В работе</span>
+            <h3>Магазин «Инструменты»</h3>
+            <span class="case-meta">Сайт + автоматизация заявок · Excel</span>
+            <span class="acc-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="case-body">
+            <div class="case-visual case-visual--tools" aria-hidden="true">
+              <div class="browser">
+                <div class="browser-bar"><span></span><span></span><span></span><i></i></div>
+                <div class="browser-body">
+                  <div class="sk-nav"><b></b><span></span><span></span><span></span></div>
+                  <div class="sk-shop">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                  <div class="sk-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="case-text">
+              <div class="case-block">
+                <span class="case-label">Было</span>
+                <p>Заявки приходили в разные каналы, терялись в переписках и записывались вручную. Часть обращений оставалась без ответа.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-label">Делаем</span>
+                <p>Сайт магазина и автоматизацию: заявки собираются в одном месте, попадают в Telegram и в таблицу Excel. Ничего не нужно переносить руками.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-label">Ожидаемый результат</span>
+                <p>Заявки перестают теряться, ручная обработка сокращается в разы. После запуска добавлю фактические показатели — без придуманных цифр.</p>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="case reveal">
+          <summary class="case-summary">
+            <span class="case-status case-status--demo">Демо-проект</span>
+            <h3>ИИ-администратор для ВКонтакте</h3>
+            <span class="case-meta">Python · GPT-4o mini · 74 теста</span>
+            <span class="acc-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="case-body">
+            <div class="case-visual case-visual--bot" aria-hidden="true">
+              <div class="chat-mock">
+                <div class="chat-msg chat-msg--in">Здравствуйте! Хочу записаться на проверку зрения</div>
+                <div class="chat-msg chat-msg--out">Добрый день! У оптометриста есть 12:00 и 15:30. Записать вас?</div>
+                <div class="chat-msg chat-msg--in">Да, на 12:00</div>
+                <div class="chat-msg chat-msg--out">Готово. Заявка сохранена в Excel, администратору ушло уведомление ✓</div>
+              </div>
+            </div>
+            <div class="case-text">
+              <div class="case-block">
+                <span class="case-label">Что это</span>
+                <p>ИИ-администратор для сообщества ВКонтакте салона оптики: отвечает клиентам круглосуточно, консультирует по базе знаний и сам доводит до записи на услугу.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-label">Что внутри</span>
+                <p>GPT-4o mini, запись только в реально свободные слоты по расписанию мастеров, заявки в Excel и уведомления администратору, защита от prompt injection, 74 автотеста.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-label">Зачем бизнесу</span>
+                <p>Ночные и выходные сообщения не пропадают, администратор получает готовые заявки вместо очереди переписок. Это демо-проект, но здесь автоматизация — рабочий код, а не теория.</p>
+              </div>
+              <a class="text-link" href="https://github.com/lazyness680-gif/vk-ai-admin-bot" target="_blank" rel="noopener">Посмотреть код на GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </details>
+
+        <!-- Кейс: TimeTracker (демо-проект) -->
+        <details class="case reveal">
+          <summary class="case-summary">
+            <span class="case-status case-status--demo">Демо-проект</span>
+            <h3>TimeTracker — канбан-тайм-трекер для Windows</h3>
+            <span class="case-meta">Python · PySide6 · SQLite · десктоп-приложение</span>
+            <span class="acc-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="case-body">
+            <div class="case-visual case-visual--tracker" aria-hidden="true">
+              <div class="app-window">
+                <div class="app-titlebar"><b></b><b></b><b></b><span>TimeTracker</span></div>
+                <div class="app-body">
+                  <div class="kanban">
+                    <div class="kb-col"><i class="kb-title"></i><span class="kb-card"></span><span class="kb-card"></span></div>
+                    <div class="kb-col"><i class="kb-title"></i><span class="kb-card kb-card--accent"></span><span class="kb-card"></span></div>
+                    <div class="kb-col"><i class="kb-title"></i><span class="kb-card"></span></div>
+                  </div>
+                  <div class="app-timer"><b></b><i>00:25:14</i></div>
+                </div>
+              </div>
+            </div>
+            <div class="case-text">
+              <div class="case-block">
+                <span class="case-label">Что это</span>
+                <p>Настольное приложение для учёта времени: канбан-доска, карточки задач, интервалы работы, профиль команды и отчёты. Две темы, без авторизации.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-label">Что внутри</span>
+                <p>Python + PySide6 + SQLite. Данные хранятся локально, на компьютере пользователя, — никакого облака и лишних подписок.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-label">Зачем бизнесу</span>
+                <p>Показывает, что помимо сайтов собираю и рабочие инструменты под конкретный процесс: тайм-трекер для команды, калькулятор смет, базу заявок.</p>
+              </div>
+              <a class="text-link" href="https://github.com/lazyness680-gif/TimeTracker" target="_blank" rel="noopener">Посмотреть код на GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <div class="more-projects reveal">
+        <span class="more-label">Ещё проекты:</span>
+        <a href="https://github.com/lazyness680-gif/balans" target="_blank" rel="noopener">«Баланс» — трекер задач и настроения</a>
+        <a href="https://github.com/lazyness680-gif" target="_blank" rel="noopener">Все репозитории ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="section section-alt" id="quiz">
+    <div class="container">
+      <div class="quiz-wrap reveal">
+        <div class="quiz-intro">
+          <p class="eyebrow">Мини-квиз</p>
+          <h2>Подберём решение за 3 вопроса</h2>
+          <p>Ответьте честно — покажу, с чего начать именно вам. Это не тест на эрудицию, а способ сэкономить созвон.</p>
+          <ul class="quiz-points">
+            <li>Без телефона и регистрации</li>
+            <li>Результат сразу на экране</li>
+            <li>Можно отправить мне в Telegram</li>
+          </ul>
+        </div>
+
+        <div class="quiz-app" id="quiz-app">
+          <div class="quiz-head">
+            <span class="quiz-step-label" id="quiz-step-label">Шаг 1 из 3</span>
+            <div class="quiz-progress" role="progressbar" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" aria-label="Прогресс квиза">
+              <span id="quiz-progress-bar"></span>
+            </div>
+          </div>
+
+          <div class="quiz-step" data-step="1">
+            <h3>Что беспокоит больше всего?</h3>
+            <div class="quiz-options">
+              <button type="button" class="quiz-option" data-value="new-site">Нет сайта или он устарел</button>
+              <button type="button" class="quiz-option" data-value="lost-leads">Заявки теряются в переписках</button>
+              <button type="button" class="quiz-option" data-value="routine">Тону в рутине: таблицы, отчёты</button>
+              <button type="button" class="quiz-option" data-value="night">Клиенты пишут ночью и в выходные</button>
+              <button type="button" class="quiz-option" data-value="ads">Реклама есть, а заявок мало</button>
+            </div>
+          </div>
+
+          <div class="quiz-step" data-step="2" hidden>
+            <h3>Сайт уже есть?</h3>
+            <div class="quiz-options">
+              <button type="button" class="quiz-option" data-value="no-site">Нет, только соцсети и сарафан</button>
+              <button type="button" class="quiz-option" data-value="old-site">Есть, но устарел</button>
+              <button type="button" class="quiz-option" data-value="good-site">Есть, нормальный</button>
+            </div>
+          </div>
+
+          <div class="quiz-step" data-step="3" hidden>
+            <h3>Что важнее прямо сейчас?</h3>
+            <div class="quiz-options">
+              <button type="button" class="quiz-option" data-value="fast">Запуститься быстро</button>
+              <button type="button" class="quiz-option" data-value="automate">Убрать ручную работу</button>
+              <button type="button" class="quiz-option" data-value="advice">Пока не знаю, нужен совет</button>
+            </div>
+          </div>
+
+          <div class="quiz-result" id="quiz-result" hidden aria-live="polite">
+            <span class="quiz-result-tag">Ваш вариант</span>
+            <h3 id="quiz-result-title"></h3>
+            <p id="quiz-result-text"></p>
+            <p class="quiz-result-price" id="quiz-result-price"></p>
+            <div class="quiz-result-actions">
+              <a class="btn btn-primary" id="quiz-tg" href="https://t.me/Aleka_Olga" target="_blank" rel="noopener" data-goal="quiz_tg_click">Обсудить в Telegram</a>
+              <a class="btn btn-ghost" href="#pricing">Посмотреть цены</a>
+            </div>
+            <button type="button" class="text-link quiz-restart" id="quiz-restart">Пройти заново</button>
+          </div>
+
+          <div class="quiz-nav">
+            <button type="button" class="text-link" id="quiz-back" hidden>← Назад</button>
+            <span class="quiz-hint" id="quiz-hint">Выберите один вариант</span>
+          </div>
+        </div>
+
+        <noscript>
+          <p class="noscript-note">Квиз требует JavaScript. Напишите мне в <a href="https://t.me/Aleka_Olga">Telegram</a> — подберу решение вручную.</p>
+        </noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Как я работаю</p>
+        <h2>Понятный процесс без сюрпризов</h2>
+        <p class="section-sub">Вы всегда знаете, на каком этапе проект и что будет дальше.</p>
+      </div>
+
+      <ol class="process-list">
+        <li class="process-item reveal">
+          <span class="process-num">1</span>
+          <div>
+            <h3>Созвон 20–30 минут</h3>
+            <p>Бесплатно. Разбираем задачу и боль, без презентаций и продаж.</p>
+          </div>
+        </li>
+        <li class="process-item reveal" data-delay="60">
+          <span class="process-num">2</span>
+          <div>
+            <h3>Бриф, смета и сроки</h3>
+            <p>Фиксируем объём, цену и дедлайн в переписке. Без «потом посчитаем».</p>
+          </div>
+        </li>
+        <li class="process-item reveal" data-delay="120">
+          <span class="process-num">3</span>
+          <div>
+            <h3>Прототип и структура</h3>
+            <p>Согласуем, что и в каком порядке будет на сайте. Правки на этом этапе дешёвые.</p>
+          </div>
+        </li>
+        <li class="process-item reveal" data-delay="180">
+          <span class="process-num">4</span>
+          <div>
+            <h3>Дизайн</h3>
+            <p>Показываю макет до вёрстки. Согласуем стиль и детали.</p>
+          </div>
+        </li>
+        <li class="process-item reveal" data-delay="240">
+          <span class="process-num">5</span>
+          <div>
+            <h3>Вёрстка и разработка</h3>
+            <p>Показываю на тестовой ссылке, а не «готово» в конце. 2 круга правок включены.</p>
+          </div>
+        </li>
+        <li class="process-item reveal" data-delay="300">
+          <span class="process-num">6</span>
+          <div>
+            <h3>Запуск и передача</h3>
+            <p>Домен, аналитика, формы. Отдаю инструкцию и все доступы — вы не зависите от меня.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="process-note reveal">
+        <strong>Что считается правкой:</strong> замена текста, фото, цвета, порядка блоков. Новая страница или функция — отдельная задача по договорённости.
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section-alt" id="pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Пакеты и цены</p>
+        <h2>Без скрытых доплат</h2>
+        <p class="section-sub">Предоплата 50%, остаток после сдачи. Точную цену называю после короткого брифа — она не меняется по ходу.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <h3>Лендинг</h3>
+          <p class="price-value">от 5 000 ₽</p>
+          <p class="price-term">3 дня</p>
+          <ul class="check-list">
+            <li>Структура и черновики текстов</li>
+            <li>Дизайн и адаптив</li>
+            <li>Форма заявки</li>
+            <li>Базовое SEO</li>
+            <li>Яндекс.Метрика</li>
+            <li>Помощь с доменом и хостингом</li>
+            <li>Инструкция по правкам</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="https://t.me/Aleka_Olga" target="_blank" rel="noopener" data-goal="tg_click">Обсудить</a>
+        </article>
+
+        <article class="price-card price-card--featured reveal" data-delay="80">
+          <span class="price-popular">Чаще всего берут</span>
+          <h3>Сайт + заявки под ключ</h3>
+          <p class="price-value">по запросу</p>
+          <p class="price-term">3–5 дней</p>
+          <ul class="check-list">
+            <li>Всё из пакета «Лендинг»</li>
+            <li>Telegram-бот для заявок</li>
+            <li>Таблица заявок</li>
+            <li>Уведомления о новых заявках</li>
+            <li>UTM-метки и источники</li>
+            <li>Проверка на тестовых заявках</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="https://t.me/Aleka_Olga" target="_blank" rel="noopener" data-goal="tg_click">Обсудить</a>
+        </article>
+
+        <article class="price-card reveal" data-delay="160">
+          <h3>Автоматизация</h3>
+          <p class="price-value">по запросу</p>
+          <p class="price-term">от 1–2 недель</p>
+          <ul class="check-list">
+            <li>Разбор, где теряются часы</li>
+            <li>Боты для VK и Telegram</li>
+            <li>Интеграции с Excel/Sheets</li>
+            <li>Отчёты и напоминания</li>
+            <li>ИИ-ассистент</li>
+            <li>Передача и инструкция</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="https://t.me/Aleka_Olga" target="_blank" rel="noopener" data-goal="tg_click">Обсудить</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES -->
+  <section class="section" id="principles">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Принципы</p>
+        <h2>Как я отношусь к работе</h2>
+        <p class="section-sub">Вместо отзывов, которых пока нет, — то, за что я отвечаю.</p>
+      </div>
+
+      <ul class="principles-grid">
+        <li class="principle reveal">
+          <span class="check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"></path></svg></span>
+          <p>Говорю честно, если задача не моя.</p>
+        </li>
+        <li class="principle reveal" data-delay="40">
+          <span class="check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"></path></svg></span>
+          <p>Объём и цена фиксируются до старта.</p>
+        </li>
+        <li class="principle reveal" data-delay="80">
+          <span class="check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"></path></svg></span>
+          <p>2 круга правок включены.</p>
+        </li>
+        <li class="principle reveal" data-delay="120">
+          <span class="check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"></path></svg></span>
+          <p>Показываю промежуточный результат, а не «готово» в конце.</p>
+        </li>
+        <li class="principle reveal" data-delay="160">
+          <span class="check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"></path></svg></span>
+          <p>Отдаю доступы и инструкцию — вы не зависите от меня.</p>
+        </li>
+        <li class="principle reveal" data-delay="200">
+          <span class="check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"></path></svg></span>
+          <p>Не обещаю «х10 продаж» — обещаю работающий сайт и понятный процесс.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container faq-container">
+      <div class="section-head section-head--left reveal">
+        <p class="eyebrow">Вопросы</p>
+        <h2>Частые вопросы</h2>
+        <p class="section-sub">Если не нашли ответ — напишите в <a href="https://t.me/Aleka_Olga" target="_blank" rel="noopener">Telegram</a>.</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>Сколько стоит сайт?<span class="acc-icon" aria-hidden="true"></span></summary>
+          <p>Лендинг — от 5 000 ₽. Стоимость сайта с автоматизацией и отдельных задач обсуждаем после короткого брифа: цена зависит от объёма, но фиксируется до старта.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Сколько времени занимает работа?<span class="acc-icon" aria-hidden="true"></span></summary>
+          <p>Лендинг — 3 дня. Сайт с заявками — 3–5 дней. Автоматизация — от 1–2 недель в зависимости от задачи и интеграций.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Как проходит оплата?<span class="acc-icon" aria-hidden="true"></span></summary>
+          <p>Предоплата 50%, остаток — после сдачи. Работаю официально как самозанятая, выдаю чек.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Что нужно от меня?<span class="acc-icon" aria-hidden="true"></span></summary>
+          <p>Бриф и материалы: описание услуг, цены, фото. Тексты помогу собрать и причесать — от вас нужна только фактура и подтверждение.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>А если не понравится?<span class="acc-icon" aria-hidden="true"></span></summary>
+          <p>2 круга правок включены. Дизайн и структуру согласуем до вёрстки, поэтому «переделать всё» в конце не приходится. Если задача выходит за рамки — обсуждаем отдельно.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Кто поддерживает сайт после сдачи?<span class="acc-icon" aria-hidden="true"></span></summary>
+          <p>Отдаю инструкцию и доступы, чтобы вы могли менять тексты сами. Дальнейшая поддержка — по договорённости.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Вы работаете официально?<span class="acc-icon" aria-hidden="true"></span></summary>
+          <p>Да, оформляюсь как самозанятая: договорённости в переписке, оплата, чек.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>У меня уже есть сайт, доработаете?<span class="acc-icon" aria-hidden="true"></span></summary>
+          <p>Нет, чужие сайты не чиню и не дорабатываю. Беру новые проекты — так отвечаю за результат целиком.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Вы работаете удалённо?<span class="acc-icon" aria-hidden="true"></span></summary>
+          <p>Да, по всей России. Созвоны — в Telegram или по видеосвязи, работа — в переписке.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Заявка</p>
+        <h2>Расскажите о задаче — отвечу в течение дня</h2>
+        <p>Не нужно готовить ТЗ. Достаточно пары предложений: чем занимаетесь и что болит. Дальше разберёмся вместе.</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-ico" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19c-.2 1-.9 1.2-1.7.7l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2L6.8 12.9 2.2 11.4c-1-.3-1-1 .2-1.5L20.5 2.8c.8-.3 1.6.2 1.4 1.5Z"/></svg>
+            </span>
+            <span><small>Telegram</small><a href="https://t.me/Aleka_Olga" target="_blank" rel="noopener" data-goal="tg_click">@Aleka_Olga</a></span>
+          </li>
+          <li>
+            <span class="contact-ico" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+            </span>
+            <span><small>E-mail</small><a href="mailto:kosyha@list.ru" data-goal="email_click">kosyha@list.ru</a></span>
+          </li>
+          <li>
+            <span class="contact-ico" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+            </span>
+            <span><small>Формат</small><strong>Удалённо, по всей России</strong></span>
+          </li>
+        </ul>
+
+        <p class="contact-note">Отвечаю в течение дня. Если срочно — сразу пишите в Telegram.</p>
+      </div>
+
+      <form class="lead-form reveal" id="lead-form" action="api/lead.php" method="post" novalidate data-delay="80">
+        <div class="form-row">
+          <label for="name">Как вас зовут <span aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" autocomplete="name" required minlength="2" placeholder="Имя">
+          <span class="field-error" id="name-error" aria-live="polite"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="lead-contact">Как связаться <span aria-hidden="true">*</span></label>
+          <input type="text" id="lead-contact" name="contact" autocomplete="email" required minlength="3" placeholder="Telegram, телефон или e-mail">
+          <span class="field-error" id="lead-contact-error" aria-live="polite"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="task">Что нужно</label>
+          <select id="task" name="task">
+            <option value="landing">Лендинг</option>
+            <option value="site-leads">Сайт + заявки под ключ</option>
+            <option value="automation">Автоматизация</option>
+            <option value="unknown" selected>Пока не знаю</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Пара слов о задаче</label>
+          <textarea id="message" name="message" rows="4" placeholder="Чем занимаетесь и что хочется исправить"></textarea>
+        </div>
+
+        <div class="form-row form-consent">
+          <label class="checkbox">
+            <input type="checkbox" id="consent" name="consent" value="1" required>
+            <span>Согласен(на) на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></span>
+          </label>
+          <span class="field-error" id="consent-error" aria-live="polite"></span>
+        </div>
+
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value="">
+        <input type="hidden" name="page" value="">
+        <input type="hidden" name="ts" value="">
+        <div class="hp" aria-hidden="true">
+          <label for="website">Не заполняйте это поле</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button class="btn btn-primary btn-block" type="submit" id="submit-btn">
+          <span class="btn-label">Отправить заявку</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Никакого спама — только ответ по задаче.</p>
+
+        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">ОК</span>
+        <span class="brand-text"><strong>Ольга Косых</strong><small>сайты и автоматизация для малого бизнеса</small></span>
+      </a>
+      <p>Один исполнитель: от структуры и текстов до заявок в Telegram.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Навигация в подвале">
+      <a href="#services">Услуги</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#pricing">Цены</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Оставить заявку</a>
+    </nav>
+
+    <div class="footer-contacts">
+      <a href="https://t.me/Aleka_Olga" target="_blank" rel="noopener" data-goal="tg_click">Telegram @Aleka_Olga</a>
+      <a href="mailto:kosyha@list.ru" data-goal="email_click">kosyha@list.ru</a>
+      <a href="https://github.com/lazyness680-gif" target="_blank" rel="noopener">GitHub ↗</a>
+      <span>Удалённо, по всей России</span>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© <span id="year">2026</span> Ольга Косых</span>
+    <a href="privacy.html">Политика конфиденциальности</a>
+    <span class="footer-status">Самозанятая · чек</span>
+  </div>
+</footer>
+
+<button class="to-top" type="button" id="to-top" aria-label="Наверх" title="Наверх">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"></path></svg>
+</button>
+
+<!-- Яндекс.Метрика: замените XXXXXXXX на номер счётчика и раскомментируйте блок
+<script type="text/javascript">
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();
+  for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window,document,'script','https://mc.yandex.ru/metrika/tag.js','ym');
+  ym(XXXXXXXX,'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/XXXXXXXX" style="position:absolute;left:-9999px" alt=""></div></noscript>
+-->
+
+<script src="js/theme.js" defer></script>
+<script src="js/quiz.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

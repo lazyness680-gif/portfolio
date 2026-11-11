@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Ольга Косых — сайты и автоматизация">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1E6D6"/>
+      <stop offset="1" stop-color="#E2D0B6"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C7DCCB"/>
+      <stop offset="1" stop-color="#93B9A0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+
+  <circle cx="660" cy="160" r="230" fill="#FFFFFF" opacity=".22"/>
+  <circle cx="90" cy="880" r="280" fill="url(#leaf)" opacity=".55"/>
+  <circle cx="700" cy="930" r="120" fill="#2F6B4F" opacity=".14"/>
+
+  <g fill="none" stroke="#2F6B4F" stroke-opacity=".18" stroke-width="2">
+    <path d="M80 200c90 10 140 70 150 160"/>
+    <path d="M120 160c70 8 110 54 118 124"/>
+    <path d="M620 760c60-6 96-44 106-104"/>
+  </g>
+
+  <circle cx="400" cy="415" r="152" fill="#2F6B4F"/>
+  <circle cx="400" cy="415" r="152" fill="none" stroke="#F7F1E8" stroke-opacity=".3" stroke-width="3"/>
+  <text x="400" y="463" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="112" font-weight="700" fill="#F7F1E8">ОК</text>
+
+  <text x="400" y="655" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="600" fill="#1F2421">Ольга Косых</text>
+  <text x="400" y="704" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="3" fill="#5F665F">САЙТЫ И АВТОМАТИЗАЦИЯ</text>
+
+  <line x1="330" y1="748" x2="470" y2="748" stroke="#2F6B4F" stroke-width="2" opacity=".45"/>
+
+  <text x="400" y="800" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="4" fill="#5F665F" opacity=".75">ЗАМЕНИТЕ ФОТО НА СВОЁ</text>
+</svg>

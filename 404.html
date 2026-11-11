@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Страница не найдена — Ольга Косых</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <style>
+    .notfound { min-height: 100vh; display: grid; place-items: center; padding: 40px 20px; text-align: center; }
+    .notfound-inner { max-width: 560px; }
+    .notfound-code { font-family: var(--font-head); font-size: clamp(5rem, 20vw, 9rem); line-height: 1; color: var(--accent); margin: 0 0 8px; }
+    .notfound p { color: var(--muted); }
+    .notfound-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 26px; }
+  </style>
+</head>
+<body>
+<main class="notfound" id="main">
+  <div class="notfound-inner">
+    <p class="notfound-code">404</p>
+    <h1>Такой страницы нет</h1>
+    <p>Возможно, ссылка устарела или в адресе опечатка. Вернитесь на главную — там всё, что нужно.</p>
+    <div class="notfound-actions">
+      <a class="btn btn-primary" href="index.html">На главную</a>
+      <a class="btn btn-ghost" href="https://t.me/Aleka_Olga" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>

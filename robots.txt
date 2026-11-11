@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /privacy.html
+
+Sitemap: https://olga-kosykh.ru/sitemap.xml

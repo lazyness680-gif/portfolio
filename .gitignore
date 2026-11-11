@@ -1,0 +1,11 @@
+# config с токенами и контактами
+api/config.php
+
+# служебное
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+node_modules/
+.vscode/
+.idea/
