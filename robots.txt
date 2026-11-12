@@ -3,4 +3,4 @@ Allow: /
 Disallow: /api/
 Disallow: /privacy.html
 
-Sitemap: https://kosyhafrilanser.ru/sitemap.xml
+Sitemap: https://kosyhafrilanser.online/sitemap.xml

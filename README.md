@@ -3,7 +3,7 @@
 Одностраничный сайт на чистом HTML / CSS / JS для малого бизнеса:
 лендинги, сайты-визитки и автоматизация заявок. Без сборщиков, фреймворков и админки.
 
-- **Боевой сайт:** https://kosyhafrilanser.ru/ (хостинг reg.ru).
+- **Боевой сайт:** https://kosyhafrilanser.online/ (хостинг reg.ru).
 - **Техническое превью:** https://lazyness680-gif.github.io/portfolio/ (GitHub Pages, без PHP-формы).
 
 ---
@@ -77,7 +77,7 @@ php -S localhost:8000
 
 ### 3. Домен
 
-Боевой домен уже прописан: **https://kosyhafrilanser.ru/**. Если он изменится, замените адрес в:
+Боевой домен уже прописан: **https://kosyhafrilanser.online/**. Если он изменится, замените адрес в:
 
 - `index.html` — `canonical`, Open Graph, Twitter Card, JSON-LD;
 - `privacy.html` — `canonical` и текст политики;
@@ -87,7 +87,7 @@ php -S localhost:8000
 
 ### 3.1. DNS и IP на reg.ru
 
-Домен `kosyhafrilanser.ru` указывает на хостинг reg.ru. В панели домена должны быть записи:
+Домен `kosyhafrilanser.online` указывает на хостинг reg.ru. В панели домена должны быть записи:
 
 | Тип | Имя | Значение |
 | --- | --- | --- |
@@ -181,29 +181,29 @@ GitHub Pages пересоберёт сайт автоматически за 1�
 
 ## Деплой на reg.ru
 
-Боевой сайт: **https://kosyhafrilanser.ru/**
+Боевой сайт: **https://kosyhafrilanser.online/**
 
 | Параметр | Значение |
 | --- | --- |
-| Домен | `kosyhafrilanser.ru` |
+| Домен | `kosyhafrilanser.online` |
 | IPv4 | `31.31.196.39` |
 | IPv6 | `2a00:f940:2:2:1:1:0:34` |
 | Корень сайта | `public_html/` (или `www/` — как в панели) |
 | PHP | 8.0+ |
 
-1. **Домен.** Убедитесь, что домен `kosyhafrilanser.ru` привязан к хостингу reg.ru.
+1. **Домен.** Убедитесь, что домен `kosyhafrilanser.online` привязан к хостингу reg.ru.
 2. **DNS.** Проверьте A/AAAA-записи по таблице из раздела «3.1. DNS и IP на reg.ru».
 3. **SSL.** Включите бесплатный SSL Let's Encrypt в панели, дождитесь выпуска и включите редирект на HTTPS.
 4. **Загрузка файлов.** Через FTP/SFTP (FileZilla) загрузите **содержимое** папки `portfolio/` в `public_html/` — так, чтобы `index.html` лежал прямо в корне.
 5. **Права.** Файлы — `644`, папки — `755`. Файл `.htaccess` загружайте в бинарном режиме.
 6. **Конфиг формы.** Скопируйте `api/config.example.php` в `api/config.php`, заполните токен Telegram и chat id (см. раздел «Telegram-бот для заявок»).
-7. **Проверка.** Откройте `https://kosyhafrilanser.ru/`, проверьте:
+7. **Проверка.** Откройте `https://kosyhafrilanser.online/`, проверьте:
    - тему (светлая/тёмная);
    - меню на телефоне;
    - квиз;
    - раскрытие кейсов и FAQ;
    - отправку формы (Telegram + почта);
-   - `https://kosyhafrilanser.ru/404.html` и несуществующий адрес;
+   - `https://kosyhafrilanser.online/404.html` и несуществующий адрес;
    - `robots.txt` и `sitemap.xml`.
 8. **Вебмастер.** Добавьте сайт в [Яндекс.Вебмастер](https://webmaster.yandex.ru/), подтвердите домен, отправьте `sitemap.xml`.
 

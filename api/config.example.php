@@ -20,5 +20,5 @@ return [
     'telegram_token'   => 'ВСТАВЬТЕ_ТОКЕН_БОТА',
     'telegram_chat_id' => 'ВСТАВЬТЕ_CHAT_ID',
     'email_to'         => 'kosyha@list.ru',
-    'email_from'       => 'site@kosyhafrilanser.ru',
+    'email_from'       => 'site@kosyhafrilanser.online',
 ];
