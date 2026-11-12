@@ -3,4 +3,4 @@ Allow: /
 Disallow: /api/
 Disallow: /privacy.html
 
-Sitemap: https://lazyness680-gif.github.io/portfolio/sitemap.xml
+Sitemap: https://kosyhafrilanser.ru/sitemap.xml
