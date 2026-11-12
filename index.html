@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=2">
+  <link rel="stylesheet" href="css/styles.css?v=3">
 
   <script>
     // Тема применяется до отрисовки, чтобы не было мигания
@@ -786,90 +786,38 @@
 
   <!-- CONTACT -->
   <section class="section contact" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-copy reveal">
+    <div class="container contact-intro reveal">
+      <div class="contact-head">
         <p class="eyebrow">Заявка</p>
         <h2>Расскажите о задаче — отвечу в течение дня</h2>
         <p>Не нужно готовить ТЗ. Достаточно пары предложений: чем занимаетесь и что болит. Дальше разберёмся вместе.</p>
-
-        <ul class="contact-list">
-          <li>
-            <span class="contact-ico" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19c-.2 1-.9 1.2-1.7.7l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2L6.8 12.9 2.2 11.4c-1-.3-1-1 .2-1.5L20.5 2.8c.8-.3 1.6.2 1.4 1.5Z"/></svg>
-            </span>
-            <span><small>Telegram</small><a href="https://t.me/Aleka_Olga" target="_blank" rel="noopener" data-goal="tg_click">@Aleka_Olga</a></span>
-          </li>
-          <li>
-            <span class="contact-ico" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
-            </span>
-            <span><small>E-mail</small><a href="mailto:kosyha@list.ru" data-goal="email_click">kosyha@list.ru</a></span>
-          </li>
-          <li>
-            <span class="contact-ico" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
-            </span>
-            <span><small>Формат</small><strong>Удалённо, по всей России</strong></span>
-          </li>
-        </ul>
-
         <p class="contact-note">Отвечаю в течение дня. Если срочно — сразу пишите в Telegram.</p>
       </div>
 
-      <form class="lead-form reveal" id="lead-form" action="api/lead.php" method="post" novalidate data-delay="80">
-        <div class="form-row">
-          <label for="name">Как вас зовут <span aria-hidden="true">*</span></label>
-          <input type="text" id="name" name="name" autocomplete="name" required minlength="2" placeholder="Имя">
-          <span class="field-error" id="name-error" aria-live="polite"></span>
-        </div>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-ico" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.8 19c-.2 1-.9 1.2-1.7.7l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2L6.8 12.9 2.2 11.4c-1-.3-1-1 .2-1.5L20.5 2.8c.8-.3 1.6.2 1.4 1.5Z"/></svg>
+          </span>
+          <span><small>Telegram</small><a href="https://t.me/Aleka_Olga" target="_blank" rel="noopener" data-goal="tg_click">@Aleka_Olga</a></span>
+        </li>
+        <li>
+          <span class="contact-ico" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+          </span>
+          <span><small>E-mail</small><a href="mailto:kosyha@list.ru" data-goal="email_click">kosyha@list.ru</a></span>
+        </li>
+        <li>
+          <span class="contact-ico" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+          </span>
+          <span><small>Формат</small><strong>Удалённо, по всей России</strong></span>
+        </li>
+      </ul>
+    </div>
 
-        <div class="form-row">
-          <label for="lead-contact">Как связаться <span aria-hidden="true">*</span></label>
-          <input type="text" id="lead-contact" name="contact" autocomplete="email" required minlength="3" placeholder="Telegram, телефон или e-mail">
-          <span class="field-error" id="lead-contact-error" aria-live="polite"></span>
-        </div>
-
-        <div class="form-row">
-          <label for="task">Что нужно</label>
-          <select id="task" name="task">
-            <option value="landing">Лендинг</option>
-            <option value="site-leads">Сайт + заявки под ключ</option>
-            <option value="automation">Автоматизация</option>
-            <option value="unknown" selected>Пока не знаю</option>
-          </select>
-        </div>
-
-        <div class="form-row">
-          <label for="message">Пара слов о задаче</label>
-          <textarea id="message" name="message" rows="4" placeholder="Чем занимаетесь и что хочется исправить"></textarea>
-        </div>
-
-        <div class="form-row form-consent">
-          <label class="checkbox">
-            <input type="checkbox" id="consent" name="consent" value="1" required>
-            <span>Согласен(на) на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></span>
-          </label>
-          <span class="field-error" id="consent-error" aria-live="polite"></span>
-        </div>
-
-        <input type="hidden" name="utm_source" value="">
-        <input type="hidden" name="utm_medium" value="">
-        <input type="hidden" name="utm_campaign" value="">
-        <input type="hidden" name="page" value="">
-        <input type="hidden" name="ts" value="">
-        <div class="hp" aria-hidden="true">
-          <label for="website">Не заполняйте это поле</label>
-          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
-        </div>
-
-        <button class="btn btn-primary btn-block" type="submit" id="submit-btn">
-          <span class="btn-label">Отправить заявку</span>
-          <span class="btn-spinner" aria-hidden="true"></span>
-        </button>
-        <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Никакого спама — только ответ по задаче.</p>
-
-        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
-      </form>
+    <div class="ya-form-full">
+      <script src="https://forms.yandex.ru/_static/embed.js"></script><iframe src="https://forms.yandex.ru/u/6af609a828697b9c935d7c91?iframe=1" frameborder="0" name="ya-form-6af609a828697b9c935d7c91" width="650"></iframe>
     </div>
   </section>
 </main>
@@ -924,6 +872,6 @@
 
 <script src="js/theme.js" defer></script>
 <script src="js/quiz.js" defer></script>
-<script src="js/main.js" defer></script>
+<script src="js/main.js?v=3" defer></script>
 </body>
 </html>
